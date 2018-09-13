@@ -1,0 +1,50 @@
+*, *::before, *::after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* ------------------------------- Global Styles */
+html {
+  height: 100%; /* makes sure our HTML takes up 100% of the browser window */
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Roboto'; /* sets our font to the "Open Sans" typeface */
+	font-style: light;
+  color: black;             /* sets the text color to white */
+  min-height: 100%;         /* says the height of the body must be, at minimum, 100% of the window */
+	font-size: 1.6rem;
+	background-color: black;
+}
+
+p {
+	color:white;
+}
+
+/* ------------------------------- Main Page Styles */
+.hero-content {
+  position: relative; /* positioning will be explained in a resource */
+  min-height: 900px;  /* hero content element must be _at least_ 600 pixels */
+  background-image: url(../assets/images/sunsetImage.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+nav {
+  position: relative;
+  padding: 0.5rem;
+  z-index: 1;
+	background-color: #fff;
+	overflow: hidden;
+	top: 100px;
+  width: 100%;
+}
+
+.fixed {
+	position: fixed;
+	top: 0;
+}
+
