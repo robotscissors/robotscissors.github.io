@@ -34,12 +34,12 @@ p {
 }
 
 nav {
-  position: relative;
+  position: absolute;
   padding: 0.5rem;
   z-index: 1;
 	background-color: #fff;
 	overflow: hidden;
-	top: 100px;
+	bottom:0;
   width: 100%;
 }
 
@@ -49,4 +49,8 @@ nav {
 
 .fixed-position {
 
+}
+
+.relative {
+	position: relative;
 }

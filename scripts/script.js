@@ -9,8 +9,17 @@ $(document).ready(function(){
 		$(".status").html(windowHeight);
 	});
 	
+	if (windowHeight>600) {
+		// add class relative
+		$("nav").addClass("relative");
+	}
+	
 	$(window).scroll(function() {
 		var scrollPosition = $(window).scrollTop();
+		if (windowHeight>600) {
+		// add class relative
+		$("nav").addClass("relative");
+	}
 		$(".status").html(windowHeight);
 		if (scrollPosition >= navOffset) {
 			$("nav").addClass("fixed");
