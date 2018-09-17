@@ -23,34 +23,52 @@ p {
 	color:white;
 }
 
-/* ------------------------------- Main Page Styles */
+/* ------------------------------- Hero Title */
 .hero-content {
   position: relative; /* positioning will be explained in a resource */
-  min-height: 900px;  /* hero content element must be _at least_ 600 pixels */
+  min-height: 600px;  /* hero content element must be _at least_ 600 pixels */
   background-image: url(../assets/images/sunsetImage.png);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+	color: white;
+	text-align: center;
 }
 
+
+/* ------------------------------- Navigation */
 nav {
-  position: absolute;
+/*  position: absolute;*/
   padding: 0.5rem;
   z-index: 1;
 	background-color: #fff;
 	overflow: hidden;
-	bottom:0;
   width: 100%;
+}
+
+.navbar {
+	display: block;
+	text-align: center;
+
+}
+.navbar a{
+	display:inline-block;
+	text-decoration: none;
+	padding: 10px 20px;
+	margin: 0px 10px;
+	
 }
 
 .fixed {
 	position: fixed;
 }
 
-.fixed-position {
-
+.fixed-position-bottom {
+	position: absolute;
+	bottom:5px;
 }
 
 .relative {
-	position: relative;
+	position: absolute;
+	top:600px;
 }
