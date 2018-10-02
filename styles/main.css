@@ -35,8 +35,9 @@ p {
 	text-align: center;
 }
 .hero-title {
-	position:absolute;
-	font-family: 'Roboto';
+	position: absolute;
+	color: black;
+	font-family: 'Comfortaa';
 	-webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
   transform: translateY(-50%);
@@ -44,10 +45,21 @@ p {
 	top:40%;
   text-align: center;
   font-size: 4rem;
-  font-weight: 300;
-/*  text-transform: uppercase;*/
-  letter-spacing: 0.5rem;
-  text-shadow: 1px 1px 0px rgb(58,23,63);
+  font-weight: 700;
+	text-transform: uppercase;*/
+/*  letter-spacing: 0.5rem;*/
+/*  text-shadow: 1px 1px 0px rgb(58,23,63);*/
+}
+.hero-subtitle {
+	position: absolute;
+	color: whitesmoke;
+	font-family: 'Comfortaa';
+	-webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 100%;
+	top:48%;
+	font-size: 3rem;
 }
 
 /* ------------------------------- Navigation */
