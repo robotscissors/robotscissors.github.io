@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-/* ------------------------------- Global Styles */
+/* ------------------------------- Global Styles and page elements */
 html {
   height: 100%; /* makes sure our HTML takes up 100% of the browser window */
   font-size: 62.5%;
@@ -13,7 +13,7 @@ html {
 body {
   font-family: 'Roboto'; /* sets our font to the "Open Sans" typeface */
 	font-style: light;
-  color: black;             /* sets the text color to white */
+  color: white;             /* sets the text color to white */
   min-height: 100%;         /* says the height of the body must be, at minimum, 100% of the window */
 	font-size: 1.6rem;
 	background-color: black;
@@ -21,6 +21,42 @@ body {
 
 p {
 	color:white;
+}
+
+.main-content {
+	width: 80%;
+	margin: 0 auto;
+}
+.sub-paragraph-callout {
+	padding-bottom: 30px;
+	font-family: 'Shadows Into Light', cursive;
+/*	text-transform: uppercase;*/
+	color: white;
+	font-size: 2.5rem;
+}
+
+.mini-message {
+	color: white;
+	font-size: 2rem;
+}
+
+.quote {
+	color: white;
+	text-align: center;
+	font-family: 'Shadows Into Light', cursive;
+	padding: 50px 50px;
+	font-size: 2.5rem;
+	color: dimgrey;
+	width: 80%;
+	margin: 0 auto;
+}
+
+.divider {
+	margin: 50px auto;
+	display: block;
+	width: 200px;
+	height: 2px;
+	background-color: yellow;
 }
 
 /* ------------------------------- Hero Title */
@@ -46,9 +82,7 @@ p {
   text-align: center;
   font-size: 4rem;
   font-weight: 700;
-	text-transform: uppercase;*/
-/*  letter-spacing: 0.5rem;*/
-/*  text-shadow: 1px 1px 0px rgb(58,23,63);*/
+	text-transform: uppercase;
 }
 .hero-subtitle {
 	position: absolute;
@@ -62,9 +96,9 @@ p {
 	font-size: 3rem;
 }
 
+
 /* ------------------------------- Navigation */
 nav {
-/*  position: absolute;*/
   padding: 0.5rem;
   z-index: 1;
 	background-color: #fff;
@@ -72,17 +106,26 @@ nav {
   width: 100%;
 }
 
+h1 {
+/*	font-family: 'Comfortaa';*/
+		font-family: 'Shadows Into Light', cursive;
+	text-transform: uppercase;
+}
+
 .navbar {
 	display: block;
 	text-align: center;
-
 }
+
 .navbar a{
 	display:inline-block;
 	text-decoration: none;
 	padding: 10px 20px;
 	margin: 0px 10px;
-	
+	color:black;
+	font-family: 'Comfortaa';
+	text-transform: uppercase;
+	font-weight: bold;
 }
 
 .fixed {
@@ -97,4 +140,21 @@ nav {
 .relative {
 	position: absolute;
 	top:600px;
+}
+
+/* ------------------------------- About me container */
+.all-about-me{
+	padding-top: 60px;
+	padding-bottom: 60px
+	margin:0 auto;
+}
+
+h1.all-about-me{
+	margin-bottom: 5px;
+}
+
+/* ------------------------------- Skills container */
+.strengths{
+	padding-top: 60px;
+	margin:0 auto;
 }
