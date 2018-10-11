@@ -30,7 +30,6 @@ p {
 .sub-paragraph-callout {
 	padding-bottom: 30px;
 	font-family: 'Shadows Into Light', cursive;
-/*	text-transform: uppercase;*/
 	color: white;
 	font-size: 2.5rem;
 }
@@ -370,3 +369,22 @@ h1.all-about-me{
 	/* ------------------------------- End Graphs */
 
 /* ------------------------------- Project Highlights */
+.flex-container {
+	display: flex;
+	justify-content: space-between;
+
+}
+
+.project-highlights{
+	margin: 0 auto;
+	width: 80%;
+}
+
+.project-highlights h1{
+	
+}
+
+.project-item {
+	width: 45%;
+	
+}
