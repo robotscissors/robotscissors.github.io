@@ -386,5 +386,16 @@ h1.all-about-me{
 
 .project-item {
 	width: 45%;
-	
+}
+
+.project-item img {
+	width: 100%;
+}
+.project-item h1 {
+	font-size: 25px;
+	font-family: 'Roboto';
+}
+
+.project-item .icon-github {
+	width: 25px;
 }
