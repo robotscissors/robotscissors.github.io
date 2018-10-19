@@ -26,6 +26,7 @@ p {
 .main-content {
 	width: 80%;
 	margin: 0 auto;
+	max-width: 1200px;
 }
 .sub-paragraph-callout {
 	padding-bottom: 30px;
@@ -103,7 +104,7 @@ p {
 /* ------------------------------- Navigation */
 nav {
   padding: 0.5rem;
-  z-index: 1;
+  z-index: 500;
 	background-color: #fff;
 	overflow: hidden;
   width: 100%;
@@ -371,12 +372,15 @@ h1.all-about-me{
 /* ------------------------------- Project Highlights */
 .flex-container {
 	display: flex;
+	flex-direction: row;
 	justify-content: space-between;
+	flex-wrap:wrap;
 
 }
 
 .project-highlights{
 	margin: 0 auto;
+	max-width: 1200px;
 	width: 80%;
 }
 
@@ -386,6 +390,7 @@ h1.all-about-me{
 
 .project-item {
 	width: 45%;
+	padding: 0 10px 90px 10px;;
 }
 
 .project-item img {
@@ -398,4 +403,11 @@ h1.all-about-me{
 
 .project-item .icon-github {
 	width: 25px;
+}
+
+@media (max-width: 768px) {
+	.project-item {
+		width: 100%;
+		padding: 0 10px 90px 10px;
+	}
 }
