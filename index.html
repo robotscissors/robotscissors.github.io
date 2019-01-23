@@ -3,11 +3,14 @@
   <head>
     <title>Christopher Bazin</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Anton|Roboto|Exo|Comfortaa" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Anton|Roboto|Exo|Comfortaa|Montserrat" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Magra:700" rel="stylesheet">
+
 		
 		<!-- Latest compiled and minified CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		
 
 		<!-- jQuery library -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -18,40 +21,55 @@
 		<!-- overwrite any styles -->
 		<link rel="stylesheet" type="text/css" href="styles/normalize.css">
     <link rel="stylesheet" type="text/css" href="styles/main.css">
+		<link rel="stylesheet" type="text/css" href="/styles/morphext.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
   </head>
-  <body class="main">
+  <body class="main" id="home">
     <nav class="navbar"> <!-- navigation bar>-->
-			<a href="">About Me</a>
-			<a href="">Strengths</a>
-			<a href="">Project Highlights</a>
-			<a href="">Education</a>
-			<a href="">Contact</a>
+			<button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<div class="navbar-brand lrgscreen">Christopher Bazin</div>
+			<div class="navbar-brand smlscreen">Christopher Bazin</div>
+			<div class="collapse navbar-collapse navHeaderCollapse">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#about" class="scrollLink">About Me</a></li>
+					<li><a href="#strengths" class="scrollLink">Strengths</a></li>
+					<li><a href="#projects" class="scrollLink">Projects</a></li>
+					<li><a href="#skills" class="scrollLink">Skills</a></li>
+					<li><a href="#contact" class="scrollLink">Contact</a></li>
+				</ul>
+			</div>
     </nav>
     <section class="hero-content"> <!-- message-->
     	<div class="hero-title">Christopher Bazin</div>
-			<div class="hero-subtitle">Software Engineer</div>
+			<div class="hero-subtitle animated flipInX"><span id="js-rotating">Software Engineer|Product Manager|Sr. Technical Project Leader|Director, Digital Marketing</span></div>
     </section>
 		<main>
     <section>
 			<div class="main-content">
 				<div class="all-about-me"><!-- about me -->
-				<h1>I'm Christopher</h1>
+				<h1 id="about">Who is Christopher?</h1>
 				<p class="sub-paragraph-callout">
-					Born in Canada, Christopher has always loved technology and computers. He is driven by the need to learn new things. He is an entrepreneur, a solution provider, someone who enjoys test driving new ideas and planning product roadmaps. 
+					Born in Canada, Christopher has always loved technology and computers. A generalist, he is driven by the need to learn new things. He is an entrepreneur, a solution provider, someone who enjoys test-driving new ideas and planning product roadmaps. 
 				</p>
 				<p>
-					Currently, as the director of digital marketing at Keck Medicine of USC, my main focus is to add strategy to the competitive landscape of health care. Working with internal teams of developers, stakeholders and digital agencies I am able to craft product roadmaps to help the organization move into the future.
+					With a degree in electrical engineering and a masters in communication management he is a team player that has a unique ability to communicate with engineers, build roadmaps and contribute in more ways than a single employee can.
+				</p>
+				<p>
+					Currently, as the director of digital marketing at Keck Medicine of USC, his main focus is to add strategy to the competitive landscape of health care. Working with internal teams of developers, digital agencies and stakeholders he is able to craft product roadmaps, mentor staff, balance budget and help the organization move into the future.
 				</p>
 				<span class="divider"></span>
 				</div>
 				<div class="quote">
-
 						"Perfect the things you know, rather than being consumed by the things you don't."
 				</div>
 				<span class="divider"></span>
 				<div class="container-fluid strengths"><!-- skills -->
 					
-					<h1>My Strengths</h1>
+					<h1 id="strengths">My Strengths</h1>
 					<p>
 						I have been in technology for more than 12 years and along the way I have managed to pick up a few skills. While knowledge of technology is important, communication, idea generation and leadership are qualities that are in high demand.
 					</p>
@@ -91,9 +109,9 @@
 												<div class="chart clearfix">
 														<div class="item">
 																<div class="bar">
-																		<span class="percent">92%</span>
+																		<span class="percent">85%</span>
 
-																		<div class="item-progress" data-percent="92">
+																		<div class="item-progress" data-percent="85">
 																				<span class="title">Leadership</span>
 																		</div>
 																		<!-- //.item-progress -->
@@ -104,22 +122,8 @@
 
 														<div class="item">
 																<div class="bar">
-																		<span class="percent">85%</span>
-
-																		<div class="item-progress" data-percent="85">
-																				<span class="title">Strategy</span>
-																		</div>
-																		<!-- //.item-progress -->
-																</div>
-																<!-- //.bar -->
-														</div>
-														<!-- //.item -->
-
-														<div class="item">
-																<div class="bar">
-																		<span class="percent">82%</span>
-
-																		<div class="item-progress" data-percent="82">
+																		<span class="percent">95%</span>
+																		<div class="item-progress" data-percent="95">
 																				<span class="title">Communication</span>
 																		</div>
 																		<!-- //.item-progress -->
@@ -130,10 +134,22 @@
 
 														<div class="item">
 																<div class="bar">
-																		<span class="percent">80%</span>
+																		<span class="percent">35%</span>
+																		<div class="item-progress" data-percent="35">
+																				<span class="title">Dev</span>
+																		</div>
+																		<!-- //.item-progress -->
+																</div>
+																<!-- //.bar -->
+														</div>
+														<!-- //.item -->
 
-																		<div class="item-progress" data-percent="80">
-																				<span class="title">Management</span>
+														<div class="item">
+																<div class="bar">
+																		<span class="percent">65%</span>
+
+																		<div class="item-progress" data-percent="65">
+																				<span class="title">Curiosity</span>
 																		</div>
 																		<!-- //.item-progress -->
 																</div>
@@ -164,54 +180,182 @@
 					</div>
 				<span class="divider"></span>
 			</div>
-			
 			<div class="project-highlights">
-				<h1>My projects</h1>
+				<h1 id="projects">My projects</h1>
 				<div class="flex-container">
 					<div class="project-item">
 						<img src="assets/images/sms-quizbot.png">
 						<h1>
-							Quizbot - SMS Quiz Generator <a href="https://github.com/robotscissors/quizbot"><img src="assets/images/github.png"  class="icon-github"></a>
+							Quizbot - SMS Quiz Generator <a href="https://github.com/robotscissors/quizbot"><img src="assets/images/github.png"  class="icon-github" target="_blank"></a>
 						</h1>
 						<p>
-							This is an open source project that I felt passionate about. I have always found SMS texting and chat bots interesting and one day while sitting in a waiting room I thought, here we have a great opportunity to engage people - a captive audience. So I decided to make a quiz framework so that other people could replicate this project and just change-up the seed file to tailor it to their quiz theme.
+							This is an open source project that I felt passionate about. I have always found SMS texting and chat bots interesting and one day while sitting in a waiting room I thought, here we have a great opportunity to engage people - a captive audience. So I decided to make a quiz framework so that other people could replicate this project and just change-up the seed file to tailor it to their quiz theme. [Twillio's SMS services, Sinatra, Postgres]
 						</p>
 					</div>
 					<div class="project-item">
 						<img src="assets/images/movietime.png">
 						<h1>
-							Movietime - API exploration <a href="https://movie-tv-actors.herokuapp.com/"><img src="assets/images/worldwideweb.png"  class="icon-github"></a> <a href="https://github.com/robotscissors/movietime"><img src="assets/images/github.png"  class="icon-github"></a>
+							Movietime - API exploration <a href="https://movie-tv-actors.herokuapp.com/"><img src="assets/images/worldwideweb.png"  class="icon-github" target="_blank"></a> <a href="https://github.com/robotscissors/movietime" target="_blank"><img src="assets/images/github.png"  class="icon-github"></a>
 						</h1>
 						<p>
-							This application makes searching for TV programs, movies and actors, fun! This is a full-stack application that leverages a community api: MovieDB. This quick project allowed me to explore API connectivity and integration in the rails environment.
+							This application makes searching for TV programs, movies and actors, fun! This is a full-stack application that leverages a community api: MovieDB. This quick project allowed me to explore API connectivity and integration in the rails environment. When the app first loads, there should be a list of popular TV shows (as determined by the API) and a search bar. Upon using the search bar, the user should see a list of shows that match the search criteria. After clicking on a TV show (from the search or main page) the user should be taken to a page with more information about that particular TV show. [Ruby on Rails, API, Postgres, MySQL]
 						</p>
 					</div>
 					<div class="project-item">
 						<img src="assets/images/robot-respository.png">
 						<h1>
-							Robot Repository - Ruby on Rails <a href="https://robot-repository.herokuapp.com/"><img src="assets/images/worldwideweb.png"  class="icon-github"></a><a href="https://github.com/robotscissors/robot-repository"><img src="assets/images/github.png"  class="icon-github"></a>
+							Robot Repository - Ruby on Rails <a href="https://robot-repository.herokuapp.com/"  target="_blank"><img src="assets/images/worldwideweb.png"  class="icon-github"></a><a href="https://github.com/robotscissors/robot-repository"><img src="assets/images/github.png"  class="icon-github" target="_blank"></a>
 						</h1>
 						<p>
-							This is an open source project that I felt passionate about. I have always found SMS texting and chat bots interesting and one day while sitting in a waiting room I thought, here we have a great opportunity to engage people - a captive audience. So I decided to make a quiz framework so that other people could replicate this project and just change-up the seed file to tailor it to their quiz theme.
+							First off, I love robots. More to the point though, in the environment I work in, we produce a lot of digital content. Content in this reference means stories, editorials, ads, brochures and basically anything an agency produces for websites, print, copy and essentially all that combines words with images. Here presents the problem, after a project has been completed and the product goes into production, all is forgotten. Is that so bad? Well, everything is fine until someone in your group says, “didn’t we write a sorry about this person last year?” Taking into account employee churn, people storing files locally and other inter-office procedural-oddities, you find yourself and your team scrambling for a printout, an email or some shred of evidence like Sherlock Holmes solving a murder mystery. The goal of the application is to provide some automation or robotic like process to the archiving and indexing of these valuable documents. <br />[Ruby on Rails, Elasticsearch, AWS S3]
 						</p>
 					</div>
 					<div class="project-item">
 						<img src="assets/images/amazonecho.png">
 						<h1>
-							Gym Tracker - Alexa Skill <a href="https://www.amazon.com/dp/B0743K3B9B/ref=sr_1_1?s=digital-skills&ie=UTF8&qid=1501728828&sr=1-1&keywords=gym+tracker"><img src="assets/images/worldwideweb.png"  class="icon-github"></a><a href="https://github.com/robotscissors/alexa-gym"><img src="assets/images/github.png"  class="icon-github"></a>
+							Gym Tracker - Alexa Skill <a href="https://www.amazon.com/dp/B0743K3B9B/ref=sr_1_1?s=digital-skills&ie=UTF8&qid=1501728828&sr=1-1&keywords=gym+tracker" target="_blank"><img src="assets/images/worldwideweb.png"  class="icon-github"></a><a href="https://github.com/robotscissors/alexa-gym" target="_blank"><img src="assets/images/github.png"  class="icon-github"></a>
 						</h1>
 						<p>
-							This is an open source project that I felt passionate about. I have always found SMS texting and chat bots interesting and one day while sitting in a waiting room I thought, here we have a great opportunity to engage people - a captive audience. So I decided to make a quiz framework so that other people could replicate this project and just change-up the seed file to tailor it to their quiz theme.
+							The Gym Tracker skill, on the Amazon Alexa service, allows a user to keep track of the days you go to the gym or workout. To invoke, just say “open gym tracker.” First-time users will be asked to determine their timezone to assist with date tracking. When you use “gym tracker” Alexa will ask you if “you are off to the gym?” A simple ‘Yes’ or ‘No’ will store the date and time. Feel free to ask Gym Tracker by saying “Alexa, ask gym tracker how many times have I been to the gym” or “how many times have I been to the gym since February 2018” and Alexa will tell you. It’s perfect if you are paying a trainer and wonder how many sessions you’ve used. To reset the gym count, just say “reset gym tracker.” <br />
+							[Node.js, AWS Lambda, AWS DynamoDB and Alexa-SDK]
 						</p>
+					</div>
+				</div>
+			</div>
+			<div class="skills">
+				<h1 id="skills">My Skills and Education Milestones</h1>
+				<p>
+					Over the last couple of years I have been working almost exclusively with the Ruby language and the Rails framework. That has further been supported in Javascript and the jQuery framework. I love programing. I felt like like I was swimming against the current when I first began using Ruby on Rails becuase of all the helpers and shortcuts. It was only until recently that I have fully embraced the elegance of the language.
+				</p>
+				<!-- Create circular chart -->
+				<div class="circle-flex-wrapper">
+					<div class="single-chart">
+						<svg viewBox="0 0 36 36" class="circular-chart orange">
+							<path class="circle-bg"
+								d="M18 2.0845
+									a 15.9155 15.9155 0 0 1 0 31.831
+									a 15.9155 15.9155 0 0 1 0 -31.831"
+							/>
+							<path class="circle"
+								stroke-dasharray="80, 100"
+								d="M18 2.0845
+									a 15.9155 15.9155 0 0 1 0 31.831
+									a 15.9155 15.9155 0 0 1 0 -31.831"
+							/>
+							<text x="18" y="16.00" class="percentage-text">Software Principles</text>
+							<text x="18" y="25.35" class="percentage">80%</text>
+						</svg>
+					</div>	
+					<div class="single-chart">
+					<svg viewBox="0 0 36 36" class="circular-chart orange">
+						<path class="circle-bg"
+							d="M18 2.0845
+								a 15.9155 15.9155 0 0 1 0 31.831
+								a 15.9155 15.9155 0 0 1 0 -31.831"
+						/>
+						<path class="circle"
+							stroke-dasharray="45, 100"
+							d="M18 2.0845
+								a 15.9155 15.9155 0 0 1 0 31.831
+								a 15.9155 15.9155 0 0 1 0 -31.831"
+						/>
+						<text x="18" y="16.00" class="percentage-text">Ruby on Rails</text>
+						<text x="18" y="25.35" class="percentage">45%</text>
+					</svg>
+				</div>
+					<div class="single-chart">
+					<svg viewBox="0 0 36 36" class="circular-chart orange">
+						<path class="circle-bg"
+							d="M18 2.0845
+								a 15.9155 15.9155 0 0 1 0 31.831
+								a 15.9155 15.9155 0 0 1 0 -31.831"
+						/>
+						<path class="circle"
+							stroke-dasharray="20, 100"
+							d="M18 2.0845
+								a 15.9155 15.9155 0 0 1 0 31.831
+								a 15.9155 15.9155 0 0 1 0 -31.831"
+						/>
+						<text x="18" y="16.00" class="percentage-text">Javascript</text>
+						<text x="18" y="25.35" class="percentage">20%</text>
+					</svg>
+				</div>
+					<div class="single-chart">
+					<svg viewBox="0 0 36 36" class="circular-chart orange">
+						<path class="circle-bg"
+							d="M18 2.0845
+								a 15.9155 15.9155 0 0 1 0 31.831
+								a 15.9155 15.9155 0 0 1 0 -31.831"
+						/>
+						<path class="circle"
+							stroke-dasharray="55, 100"
+							d="M18 2.0845
+								a 15.9155 15.9155 0 0 1 0 31.831
+								a 15.9155 15.9155 0 0 1 0 -31.831"
+						/>
+						<text x="18" y="16.00" class="percentage-text">Git</text>
+						<text x="18" y="25.35" class="percentage">55%</text>
+					</svg>
+				</div>
+					<div class="single-chart">
+					<svg viewBox="0 0 36 36" class="circular-chart orange">
+						<path class="circle-bg"
+							d="M18 2.0845
+								a 15.9155 15.9155 0 0 1 0 31.831
+								a 15.9155 15.9155 0 0 1 0 -31.831"
+						/>
+						<path class="circle"
+							stroke-dasharray="90, 100"
+							d="M18 2.0845
+								a 15.9155 15.9155 0 0 1 0 31.831
+								a 15.9155 15.9155 0 0 1 0 -31.831"
+						/>
+						<text x="18" y="16.00" class="percentage-text">SQL</text>
+						<text x="18" y="25.35" class="percentage">70%</text>
+					</svg>
+				</div>
+		
+				</div>
+				<span class="divider"></span>
+				<div class="education-milesone">
+					University of Southern California - Master of Communication Management Focus on Digital Strategy and Online Community Management
+				</div>
+				<div class="education-milesone">
+					BLOC - Software Engineering apprenticeship and bootcamp
+				</div>
+				<div class="education-milesone">
+					Florida Institute of Technology, Certificate program, IT Management
+				</div>
+				<div class="education-milesone">
+					University of Saskatchewan, Canada - Bachelor of Science, Electrical Engineering
+				</div>
+			</div>
+			<span class="divider"></span>
+			<div class="contact">
+				<h1 id="contact">Say Hello!</h1>
+				<div class="flex-container">
+					<div class="contact-item">
+						<p>
+							Based in Los Angeles, California, and more specifically, Sherman Oaks (becuase LA is big place!) feel free to reach out if you have questions, want to say hello, or have an opportunity to discuss! 
+						</p>
+						<a href="https://github.com/robotscissors" target="_blank"><img src="assets/images/github.png" class="icon github"></a>
+						<a href="mailto:cjbazin@gmail.com" target="_blank"><img src="assets/images/email-icon.png" class="icon email"></a>
+						<a href="https://www.linkedin.com/in/cbazin" target="_blank"><img src="assets/images/linkedin.png" class="icon linkedin"></a>
+					</div>
+					<div class="contact-item">
+						<img src="/assets/images/Christopher_Bazin_profile_sq.png">
 					</div>
 				</div>
 			</div>
 		</section>
 		</main>
 		
-<!--    <script src="scripts/utilities.js"></script>-->
     <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+<!--		<script src="scripts/snap.svg-min.js"></script>-->
 		<script src="scripts/script.js"></script>
 		<script src="scripts/graph.js"></script>
+		<script src="scripts/morphext.js"></script>
+		<script src="scripts/animation-settings.js"></script>
+
   </body>
 </html>
