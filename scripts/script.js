@@ -46,3 +46,8 @@ $(document).ready(function(){
         $("html, body").animate({ scrollTop: $($(this).attr("href")).offset().top-100}, 1500);
 		});
 });
+
+// collapse hamburger menu when clicked
+$('.navbar-nav>li>a').on('click', function(){
+    $('.navbar-collapse').collapse('hide');
+});
